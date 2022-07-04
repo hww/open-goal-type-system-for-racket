@@ -7,7 +7,7 @@
 
 The implementation of the GOAL type system with Racket language. This explanation of the GOAL type system available [here](https://open-goal.github.io/docs/reference/type_system) Or you can see the source code of whole [Jack Project](https://github.com/open-goal/jak-project)
 
-## this project
+## This project motivations
 
 I plan to write a GOAL compiler as an embedded solution in mobile applications or game engines. The compiler is incomplete at the moment, but the type system is ready.
 
