@@ -1,4 +1,14 @@
 #lang racket/base
+;; ----------------------------------------------------------------------------
+;;
+;; Valeriya P.
+;; https://gist.github.com/hww
+;; _______ ________ ________
+;; |   |   |  |  |  |  |  |  |
+;; |       |  |  |  |  |  |  |
+;; |___|___|________|________|
+;;
+;; ----------------------------------------------------------------------------
 
 (require racket/contract racket/pretty)
 (require "interfaces.rkt" "type-system.rkt" "type-spec.rkt" "type.rkt" "basic-types.rkt" "../vmc-lib.rkt")
