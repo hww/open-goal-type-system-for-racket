@@ -1,13 +1,13 @@
 
 <p align="center">
-  <img width="500" height="100%" src="./docs/img/logo-text-colored-new.png">
+  <img width="500" height="100%" src="./docs/img/logo-text-colored-new-ts.png">
 </p>
 
 # The open GOAL type system for Racket
 
 The implementation of the GOAL type system with Racket language. This explanation of the GOAL type system available [here](https://open-goal.github.io/docs/reference/type_system) Or you can see the source code of whole [Jack Project](https://github.com/open-goal/jak-project)
 
-## this project
+## This project motivations
 
 I plan to write a GOAL compiler as an embedded solution in mobile applications or game engines. The compiler is incomplete at the moment, but the type system is ready.
 
@@ -16,6 +16,11 @@ I plan to write a GOAL compiler as an embedded solution in mobile applications o
 The plan was to use Racket because of its system of Syntax objects. The input .gc file can be parsed with read-syntax and the resulting Syntax object tree can be transformed to AST and then the code can be compiled.
 
 Syntax tree advantage over s-expression is that Syntax-tree has information about position of Syntax-object in source file. Thus error information may contain necessary debugging information.
+
+## Status
+
+It is mostly works, the test code in deftype.rkt file parsing the file all-types.gc with 34k lines of code. As result it is defining 1539 types and 89 enums. 
+For a futue development reuired only a bugfixing and making better error messaging with Racket exeptions handling and Syntax locations.
 
 ## Files
 
