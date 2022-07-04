@@ -17,6 +17,10 @@ The plan was to use Racket because of its system of Syntax objects. The input .g
 
 Syntax tree advantage over s-expression is that Syntax-tree has information about position of Syntax-object in source file. Thus error information may contain necessary debugging information.
 
+## Status
+
+It is mostly works, the test code in deftype.rkt parsing the all-types.gc file with 34k lines and defining 1539 types and 89 enums. For futue development reuired only a bugfixing and making better error messaging with Racket exeptions handling and Syntax locations.
+
 ## Files
 
 - interfaces.rkt -- Interface for all types
