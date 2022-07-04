@@ -14,7 +14,7 @@
          racket/list
          sexp-diff)
 
-(require "interfaces.rkt" "../vmc-lib.rkt")
+(require "interfaces.rkt" "vmc-lib.rkt")
 
 (provide (all-defined-out))
 

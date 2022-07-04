@@ -10,7 +10,7 @@
 ;;
 ;; ----------------------------------------------------------------------------
 
-(require "type-spec.rkt" "../vmc-lib.rkt" "type-system.rkt")
+(require "type-spec.rkt" "vmc-lib.rkt" "type-system.rkt")
 (require rebellion/type/enum)
 (require racket/contract racket/list)
 ;;

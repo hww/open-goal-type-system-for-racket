@@ -15,7 +15,7 @@
 (require racket/contract racket/string)
 (require data/gvector)
 
-(require "type.rkt" "basic-types.rkt" "type-spec.rkt" "../vmc-lib.rkt" "interfaces.rkt" "../libs/define-with-struct.rkt")
+(require "type.rkt" "basic-types.rkt" "type-spec.rkt" "vmc-lib.rkt" "interfaces.rkt")
 
 (provide (all-defined-out))
 
