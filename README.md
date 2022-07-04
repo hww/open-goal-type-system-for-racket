@@ -7,6 +7,16 @@
 
 The implementation of the GOAL type system with Racket language. This explanation of the GOAL type system available [here](https://open-goal.github.io/docs/reference/type_system) Or you can see the source code of whole [Jack Project](https://github.com/open-goal/jak-project)
 
+## this project
+
+I plan to write a GOAL compiler as an embedded solution in mobile applications or game engines. The compiler is incomplete at the moment, but the type system is ready.
+
+## Why Racket
+
+The plan was to use Racket because of its system of Syntax objects. The input .gc file can be parsed with read-syntax and the resulting Syntax object tree can be transformed to AST and then the code can be compiled.
+
+Syntax tree advantage over s-expression is that Syntax-tree has information about position of Syntax-object in source file. Thus error information may contain necessary debugging information.
+
 ## Files
 
 - interfaces.rkt -- Interface for all types
