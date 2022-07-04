@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img width="500" height="100%" src="./docs/img/logo-text-colored-new.png">
+  <img width="500" height="100%" src="./docs/img/logo-text-colored-new-ts.png">
 </p>
 
 # The open GOAL type system for Racket
