@@ -36,3 +36,18 @@ For a futue development reuired only a bugfixing and making better error messagi
 - rt-type.rkt -- The runtime version of basic type. Not used by type system above
 - goalc-all-types.gc -- The list of typespecs of the GOAL
 - goalc-type-specs.txt -- The GOAL types file used for testing
+
+## Usage
+
+The peculiarity of the implementation is that it is maximally identical to the OpenGOAL project. Parsers get a list of syntax without the first element as an argument. That is, for `defenum` statement the list starts with the name of the new type, but the keyword `defenum` is omitted.
+
+```lisp
+;; Define new type system
+(define tsys (type-system-new))
+;; Add buiilting types
+(add-builtin-types tsys)
+;; Parse statements
+(parse-declare-type the-declare-type-syntax-list tsys)
+(parse-deftype the-deftype-syntax-list tsys constants)
+(parse-defenum the-defenum-syntax-list tsys)
+```
