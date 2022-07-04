@@ -19,7 +19,8 @@ Syntax tree advantage over s-expression is that Syntax-tree has information abou
 
 ## Status
 
-It is mostly works, the test code in deftype.rkt parsing the all-types.gc file with 34k lines and defining 1539 types and 89 enums. For futue development reuired only a bugfixing and making better error messaging with Racket exeptions handling and Syntax locations.
+It is mostly works, the test code in deftype.rkt file parsing the file all-types.gc with 34k lines of code. As result it is defining 1539 types and 89 enums. 
+For a futue development reuired only a bugfixing and making better error messaging with Racket exeptions handling and Syntax locations.
 
 ## Files
 
