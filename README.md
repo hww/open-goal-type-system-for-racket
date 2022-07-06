@@ -42,7 +42,7 @@ For a futue development reuired only a bugfixing and making better error messagi
 The peculiarity of the implementation is that it is maximally identical to the OpenGOAL project. Parsers get a list of syntax without the first element as an argument. That is, for `defenum` statement the list starts with the name of the new type, but the keyword `defenum` is omitted.
 
 ```lisp
-;; Define new type system
+;; Define new type system and add builtin types
 (define tsys (type-system-new!))
 ;; Parse statements
 (parse-declare-type the-declare-type-syntax-list tsys)
