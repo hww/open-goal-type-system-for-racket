@@ -43,9 +43,7 @@ The peculiarity of the implementation is that it is maximally identical to the O
 
 ```lisp
 ;; Define new type system
-(define tsys (type-system-new))
-;; Add buiilting types
-(add-builtin-types tsys)
+(define tsys (type-system-new!))
 ;; Parse statements
 (parse-declare-type the-declare-type-syntax-list tsys)
 (parse-deftype the-deftype-syntax-list tsys constants)
